@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+:root {
+    --h-color: #0084fd;
+    --bg-card: #b5ddff;
+    --bg-section: #9792e4;
+    --title-color: #fdc15f;
+    --bg-footer: #333333;
+    --st-txt-color: #fff;
+    --st-txt-inv: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-st {
+    color: var(--st-txt-color);
+}
+
+.color-st-inv {
+    color: var(--st-txt-inv);
+}
+
+.color-active {
+    color: var(--h-color);
+}
+
+.color-sect{
+    color: var(--bg-section);
+}
+
+.color-y{
+    color: var(--title-color);
+}
+
+.button-small {
+    background-color: var(--st-txt-color);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.button-small-active {
+    background-color: var(--h-color);
+    padding: 10px 45px;
+    border-radius: 30px;
+}
+
+.button-small-more {
+    background-color: var(--bg-section);
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+.button-small-get{
+    background-color: var(--st-txt-color);
+    padding: 30px 105px;
+    border-radius: 50px;
+}
+
+.fs-title-b{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.fs-title-m{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.fs-title-s{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.line-h-st{
+    line-height: 1.7rem;
+}
+
+.photo-clip img{
+    border-radius: 100%;
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-w {
+    flex-wrap: wrap;
+}
+
+.d-i-block{
+    display: inline-block;
+}
+
+.margin-b-small {
+    margin-bottom: 20px;
+}
+
+.margin-b-m {
+    margin-bottom: 30px;
+}
+
+.margin-b-big {
+    margin-bottom: 60px;
+}
+
+.margin-t-small {
+    margin-top: 20px;
+}
+
+.margin-t-m {
+    margin-top: 30px;
+}
+
+.margin-t-b {
+    margin-top: 60px;
+}
+
+.margin-tb-small {
+    margin: 20px 0px;
+}
+
+.margin-tb-med {
+    margin: 30px 0px;
+}
+
+.margin-small {
+    margin: 10px;
+}
+
+.padd-top-m{
+    padding-top: 60px;
+}
+
+.padd-tb-m{
+    padding: 60px 0px;
+}
+
+.padd-tb-s{
+    padding: 40px 0px;
+}
+
+.padd-top{
+    padding-top: 90px;
+}
+
+
+/* header */
+
+header {
+    background-color: var(--h-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.head-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.head-container .logo {
+    padding: 10px 0px;
+}
+
+.head-container .logo img {
+    height: 30px;
+}
+
+.menu ul li a {
+    color: var(--st-txt-color);
+}
+
+.menu ul li:last-child a {
+    color: var(--st-txt-inv);
+}
+
+.menu .extended {
+    display: none;
+
+}
+
+.menu .extended ul li a {
+    text-decoration: none;
+}
+
+.menu .extended ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+
+
+
+/* main */
+
+/* section card */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.cards .card,
+.cards .card-ill {
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    
+}
+
+.cards .card:hover,
+.cards .card-ill:hover {
+    animation: 1s ease-in-out;
+    transform: scale(1.05);
+}
+
+.cards .card {
+    padding: 25px;
+}
+
+
+.cards .card-ill {
+    padding: 15px 15px 0px 15px;
+    display: flex;
+}
+
+
+
+
+.cards .card .description h1,
+.cards .card-ill .description h1 {
+    color: var(--h-color);
+}
+
+.cards .card p,
+.cards .card-ill p {
+    margin: 20px 0px;
+    line-height: 2rem;
+}
+
+.cards .card .description a,
+.cards .card-ill .description a {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.cards .card-ill .illustration img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+
+}
+
+.cards .card .icon {
+    color: var(--h-color);
+    font-size: 4rem;
+}
+
+
+
+
+
+
+/* section strategic planning */
+
+.strategic-planning{
+    background-color: var(--bg-section);
+}
+
+.strategic-planning .container .box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box .image-content img{
+    margin-bottom: 60px;
+}
+
+.box .image-content p{
+    line-height: 1.7rem;
+
+}
+
+.box .card{
+    background-color: var(--st-txt-color);
+    border-radius: 55px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.box .card:hover{
+    animation: 1s ease-in-out;
+    transform: translate(0px, 20px );
+}
+
+
+.box .card p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+
+.box .card .down-button{
+    background-color: var(--bg-section);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 20px auto;
+}
+
+.down-button span{
+    font-size: 1.2rem;
+    line-height: 50px;
+}
+
+
+/* section testimonal */
+
+.box-card .card{
+    background-color: var(--bg-section);
+    border-radius: 35px;
+    width: 100%;
+    padding: 20px;
+}
+
+.box-card .card .txt-card {
+    line-height: 1.7rem;
+}
+
+.box-card .card {
+    justify-content: center;
+}
+
+.box-card .card .txt-card span{
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* section multicard */
+
+
+.multicard{
+    background-color: var(--bg-section);
+    padding: 50px 0px;
+}
+
+.multicard .card{
+    background-color: var(--st-txt-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.multicard .card a{
+    display: inline-block;
+}
+
+.multicard .card p{
+    line-height: 1.7rem;
+}
+
+/* section about us */
+
+.presentation .photo-clip{
+    position: relative;
+}
+
+.presentation .photo-clip span{
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.photo-clip{
+    width: 200px;
+}
+
+/* section get started */
+
+.get-started{
+    background-color: var(--bg-section);
+}
+
+.get-started .container{
+    max-width: 400px;
+}
+
+.get-started .container span{
+    letter-spacing: 2px;
+}
+
+.get-started .container p a{
+    text-decoration: underline;
+}
+
+/* footer */
+
+
+footer{
+    background-color: var(--bg-footer);
+    
+}
+
+.container .f-txt{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.f-txt p a{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+
+@media all and (min-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* section card */
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards .card,
+    .cards .card-ill {
+        margin: 10px;
+    }
+
+    .box-two-col{
+        display: flex;
+    }
+
+    .cards .card {
+        padding: 15px;
+    }
+
+    .card-ill {
+        width: 65%;
+    }
+
+    .cards .box-two-col .card{
+        justify-content: flex-end;
+    }
+
+    .card {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .card-ill .illustration img {
+        width: 60%;
+    }
+
+    /* strategic planning */
+
+    .box .card{
+        width: 100%;
+    }
+
+    /* Section testimonal */
+
+    .box-card .card {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .box-card .card .txt-card{
+        margin: 0px 20px;
+        text-align: left;
+    }
+
+    .box-card .card .txt-card span{
+        margin-top: 30px;
+    }
+
+    /* Section multicard */
+
+    .contain-multicard .card{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% / 2 - 20px);
+    }
+
+
+    /* Section about us */
+
+    .container .box-container{
+        flex-wrap: nowrap;
+    }
+
+    .container .box-container .text-big{
+        width: 60%;
+        padding-right: 20px;
+    }
+
+    .presentation{
+        width: 40%;
+    }
+
+    .presentation p{
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */
+
+@media all and (min-width: 992px) {
+
+    .container{
+        width: 80%;
+        max-width: 950px;
+    }
+
+    /* header */
+    .menu .extended {
+        display: block;
+    }
+
+    .menu .compressed {
+        display: none;
+    }
+
+    /* Section card */
+
+    .cards .card-ill {
+        flex-wrap: wrap;
+    }
+
+    .box-two-c .card-ill {
+        width: 60%;
+    }
+
+    .box-two-c .card {
+        width: 40%;
+    }
+
+    .cards .card-ill .description {
+        width: 60%;
+    }
+
+    .cards .card-ill .illustration {
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .card-ill .illustration img {
+        width: 100%;
+
+    }
+
+    .card p,
+    .card-ill p {
+        line-height: 1.5rem;
+    }
+
+    /* Section strategic planning */
+
+    .strategic-planning .container .box{
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .strategic-planning .container .box .card,
+    .strategic-planning .container .box .image-content{
+        margin: 0px 20px;
+        width: 50%;
+    }
+
+     .strategic-planning .container .box {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .strategic-planning .container .box .card{
+        align-self: flex-end;
+        margin-top: 80px;
+    }
+
+    .strategic-planning .container .box .image-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strategic-planning .container .box .image-content .box-txt{
+        align-self: flex-end;
+    }
+
+    /* Section multicard */
+
+
+    .contain-multicard .card{
+        width: calc(100% / 3 - 20px);
+    }
+
+
+    .container .box-container .text-big{
+        width: 70%;
+        padding-right: 50px;
+    }
+
+    /* Section about us */
+
+    .presentation{
+        width: 30%;
+    }
+
+    .presentation p{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* Desktop Large */
+
+@media all and (min-width: 1200px) {}
